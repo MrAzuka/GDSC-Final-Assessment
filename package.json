@@ -1,0 +1,48 @@
+{
+  "name": "GDSC-Final-Assessment",
+  "version": "1.0.0",
+  "description": "Create an API that manages the menu order for a restaurant.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "mocha --timeout 15000",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrAzuka/GDSC-Final-Assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrAzuka/GDSC-Final-Assessment/issues"
+  },
+  "homepage": "https://github.com/MrAzuka/GDSC-Final-Assessment#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "lint-staged": "^12.3.4",
+    "mocha": "^9.2.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "postgres": "^1.0.2",
+    "winston": "^3.6.0"
+  }
+}
